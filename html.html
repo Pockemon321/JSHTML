@@ -1,0 +1,14 @@
+html
+<form id="myForm">
+    Имя: <input type="text" name="name">
+    Email: <input type="email" name="email">
+    <button type="submit">Отправить</button>
+</form>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log("Имя:", event.target.name.value);
+        console.log("Email:", event.target.email.value);
+    });
+</script>
